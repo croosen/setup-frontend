@@ -1,4 +1,4 @@
-# Setup Frontend
+# Frontend Kickstart
 
 A kickstart for setting up a frontend base, including:
 
@@ -12,7 +12,7 @@ A kickstart for setting up a frontend base, including:
   
   #### Bower
   - Includes Bower for dependancy management
-  - Bower loads initial: jQuery, jQuery dotdotdot, Font Awesome, Bootstrap Sass and Slick Carousel
+  - Bower loads initial: jQuery, jQuery dotdotdot, Material Icons, Cookie Consent and Slick Carousel
   
   #### Gulpfile
   - Includes the basic frontend tools like Autoprefixer, Babel, minify, concat, rename etc.
