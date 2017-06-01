@@ -1,0 +1,47 @@
+@import "bower_components/susy/sass/susy";
+
+// Changing Susy default settings
+// http://susydocs.oddbird.net/en/latest/settings/
+$susy: (
+    columns: 12,
+    gutters: .50,
+    container: 1170px,
+    global-box-sizing: border-box,
+    gutter-position: inside
+);
+
+// Border box setting
+// http://susydocs.oddbird.net/en/latest/settings/#global-box-sizing
+@include border-box-sizing;
+
+// Grid
+.container {
+    @include container;
+}
+
+// >= 768
+@media (min-width: 48em) {
+    @for $i from 1 through 12 {
+        .col-sm-#{$i} {
+            @include span($i);
+        }
+    }
+}
+
+// >= 1024
+@media (min-width: 64em) {
+    @for $i from 1 through 12 {
+        .col-md-#{$i} {
+            @include span($i);
+        }
+    }
+}
+
+// >= 1200
+@media (min-width: 75em) {
+    @for $i from 1 through 12 {
+        .col-lg-#{$i} {
+            @include span($i);
+        }
+    }
+}
