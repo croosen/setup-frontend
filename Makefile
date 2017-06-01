@@ -19,6 +19,7 @@ common:
 install:
 	if [ -f package.json ]; then npm install; fi
 	if [ -f package.json ]; then npm dedupe; fi
+	if [ -f bower.json ]; then bower prune; fi
 	if [ -f bower.json ]; then bower install; fi
 	if [ -f gulpfile.js ]; then gulp; fi
 	@echo "Done..."
