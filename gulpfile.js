@@ -82,6 +82,8 @@ var config = {
 
         fonts: {
             files: [
+                './bower_components/material-design-icons/iconfont/MaterialIcons-Regular.woff',
+                './bower_components/material-design-icons/iconfont/MaterialIcons-Regular.woff2'
             ],
             dest: './public/dist/fonts'
         }
