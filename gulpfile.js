@@ -67,12 +67,15 @@ var config = {
 
     bower: {
 
+        // Styles can be included in the assets/sass directory when needed
+        // Scripts can be added by uncommenting them when needed
+
         scripts: {
             files: [
-                './bower_components/jquery/dist/jquery.min.js',
-                './bower_components/slick-carousel/slick/slick.min.js',
-                './bower_components/jQuery.dotdotdot/src/jquery.dotdotdot.min.js',
-                './bower_components/jQuery.dotdotdot/src/jquery.dotdotdot.min.js',
+                './bower_components/jquery/dist/jquery.min.js'
+                // './bower_components/slick-carousel/slick/slick.min.js',
+                // './bower_components/jQuery.dotdotdot/src/jquery.dotdotdot.min.js',
+                // './bower_components/cookieconsent/build/cookieconsent.min.js'
             ],
             dest: './public/dist/js'
         },
