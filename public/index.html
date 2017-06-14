@@ -1,9 +1,10 @@
 <!doctype html>
 <html class="no-js" lang="">
+
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
+        <title>Kick Ass Frontend Setup</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -12,17 +13,44 @@
 
         <link rel="stylesheet" href="/css/app.min.css">
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-        <script>try{ Modernizr } catch(e) { document.write('<script src="/js/vendor/modernizr-2.8.3.min.js"><\/script>') }</script>
     </head>
+
     <body>
-        <!--[if lt IE 8]>
+        <!-- TODO - styling and testing of browserupgrade -->
+        <!--[if lt IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <p>Hello world! This is Frontend Kickstart.</p>
+        <div class="section">
+            <div class="container">
+                <div class="col-xs-12">
+                    <p>Hello world! This is a Kick Ass Frontend Setup.</p>
+                </div>
+            </div>
+        </div>
 
+        <section class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 col-lg-6">
+                        <div class="card">
+                            this is a card
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-lg-6 t-mb-20">
+                        <div class="card">
+                            this is a card
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-lg-12">
+                        <div class="card">
+                            this is a card
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="/js/dist/jquery.min.js"><\/script>')</script>
@@ -38,4 +66,5 @@
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
     </body>
+
 </html>
