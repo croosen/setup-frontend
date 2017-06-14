@@ -1,3 +1,4 @@
-public/dist/
+assets/javascript/vendor
+public/fonts/vendor
 public/js/
 public/css/
