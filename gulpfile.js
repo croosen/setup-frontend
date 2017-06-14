@@ -61,6 +61,7 @@ var config = {
             main: './assets/javascript/*.js',
             src: './assets/javascript/**',
             files: './assets/javascript/**/*.js',
+            vendor: './assets/javascript/vendor/*.js',
             dest: './public/js'
         }
     },
@@ -77,7 +78,7 @@ var config = {
                 // './bower_components/jQuery.dotdotdot/src/jquery.dotdotdot.min.js',
                 // './bower_components/cookieconsent/build/cookieconsent.min.js'
             ],
-            dest: './public/dist/js'
+            dest: './assets/javascript/vendor'
         },
 
         fonts: {
@@ -85,7 +86,7 @@ var config = {
                 './bower_components/material-design-icons/iconfont/MaterialIcons-Regular.woff',
                 './bower_components/material-design-icons/iconfont/MaterialIcons-Regular.woff2'
             ],
-            dest: './public/dist/fonts'
+            dest: './public/fonts/vendor'
         }
     }
 };
@@ -116,7 +117,7 @@ function displayError(error) {
  | Gulp task - default
  |--------------------------------------------------------------------------
  */
-gulp.task('default', ['sass', 'javascript', 'bower']);
+gulp.task('default', ['bower', 'sass', 'javascript']);
 
 /*
  |--------------------------------------------------------------------------
@@ -175,7 +176,10 @@ gulp.task('sass', function() {
  */
 gulp.task('javascript', function() {
 
-    return gulp.src(config.default.scripts.main)
+    return gulp.src([
+            config.default.scripts.vendor,
+            config.default.scripts.main
+        ])
         .pipe(plumber())
         .pipe(babel({
             presets: ["es2015"]
