@@ -17,6 +17,7 @@
     "cookieconsent": "^3.0.4",
     "material-design-icons": "^3.0.1",
     "susy": "^2.2.12",
-    "normalize-css": "normalize.css#^7.0.0"
+    "normalize-css": "normalize.css#^7.0.0",
+    "css-toolbox": "nagiri"
   }
 }
