@@ -2,12 +2,14 @@
 
 // Changing Susy default settings
 // http://susydocs.oddbird.net/en/latest/settings/
+
 $susy: (
+    //container: 1170px, / susy default is 1080
     columns: 12,
-    gutters: .50,
-    container: 1170px,
-    global-box-sizing: border-box,
-    gutter-position: inside
+    gutter-position: inside-static,
+    column-width: 60px,
+    gutters: 30px/60px,
+    global-box-sizing: border-box
 );
 
 // Border box setting
@@ -16,7 +18,21 @@ $susy: (
 
 // Grid
 .container {
-    @include container;
+  @include container;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+// <= 767
+@for $i from 1 through 12 {
+    .col-xs-#{$i} {
+        @include span($i);
+    }
 }
 
 // >= 768
