@@ -9,44 +9,44 @@
  */
 
 // Load Gulp
-var gulp = require('gulp');
+const gulp = require('gulp');
 
 // Load Plumber
-var plumber = require('gulp-plumber');
+const plumber = require('gulp-plumber');
 
 // Load Glob
-var glob = require('glob');
+const glob = require('glob');
 
 // Load Notify
-var notify = require('gulp-notify');
+const notify = require('gulp-notify');
 
 // Load Rename
-var rename = require('gulp-rename');
+const rename = require('gulp-rename');
 
 // Load Babel
-var babel = require('gulp-babel');
+const babel = require('gulp-babel');
 
 // Load Uglify
-var uglify = require('gulp-uglify');
+const uglify = require('gulp-uglify');
 
 // Load Concat
-var concat = require('gulp-concat');
+const concat = require('gulp-concat');
 
 // Load Gulp Sass
-var sass = require('gulp-sass');
+const sass = require('gulp-sass');
 
 // Load Sourcemaps
-var sourcemaps = require('gulp-sourcemaps');
+const sourcemaps = require('gulp-sourcemaps');
 
 // Load Autoprefixer
-var prefix = require('gulp-autoprefixer');
+const prefix = require('gulp-autoprefixer');
 
 /*
  |--------------------------------------------------------------------------
  | Config
  |--------------------------------------------------------------------------
  */
-var config = {
+const config = {
 
     default: {
 
