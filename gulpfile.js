@@ -152,7 +152,6 @@ gulp.task('sass', function() {
         .pipe(plumber())
         .pipe(sass({
             outputStyle: 'compressed',
-            sourceComments: 'map',
             includePaths: [config.default.styles.src]
         }))
         .pipe(prefix(
